@@ -1,0 +1,20 @@
+[
+  {
+    "customer_name": null,
+    "contact_number": null,
+    "product_or_service": null,
+    "complaint_description": "Hello, this is Sarah Connor. I want to report a safety hazard. The electric kettle model K300 I purchased yesterday sparks whenever I turn it on. It almost set my kitchen counter on fire. I want a refund immediately. Please call me back at 555-9090.",
+    "incident_date": null,
+    "sentiment": "Angry",
+    "severity": "Critical",
+    "priority": "P0",
+    "resolution_plan": [
+      "Flag ticket for review by operations team.",
+      "Verify transaction or order records.",
+      "Arrange contact callback with supervisor."
+    ],
+    "customer_response": "Hello, thank you for contacting us. I have registered your complaint regarding the item under priority P0. Our support team will inspect the details and follow up with you as soon as possible.",
+    "id": "759cc3c7-51ea-4e8a-aa34-ea8aac2413e2",
+    "created_at": "2026-06-27T12:08:01.851324"
+  }
+]
