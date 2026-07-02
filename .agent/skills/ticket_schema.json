@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VoiceComplaintTicket",
+  "type": "object",
+  "properties": {
+    "customer_name": {
+      "type": ["string", "null"],
+      "description": "Name of the customer reporting the complaint"
+    },
+    "contact_number": {
+      "type": ["string", "null"],
+      "description": "Phone number or email address of the customer"
+    },
+    "product_or_service": {
+      "type": ["string", "null"],
+      "description": "The specific product, device, model, or service the complaint is about"
+    },
+    "complaint_description": {
+      "type": "string",
+      "description": "A detailed summary of the core issue reported by the customer"
+    },
+    "incident_date": {
+      "type": ["string", "null"],
+      "description": "The date or time when the incident occurred, if mentioned"
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": ["Calm", "Neutral", "Frustrated", "Angry"],
+      "description": "The emotional state of the customer during the complaint"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["Low", "Medium", "High", "Critical"],
+      "description": "The operational or functional severity of the reported issue"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["P3", "P2", "P1", "P0"],
+      "description": "Urgency classification. P0 is critical/emergency, P3 is low priority"
+    },
+    "resolution_plan": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "A list of actionable steps for operations to resolve the complaint"
+    },
+    "customer_response": {
+      "type": "string",
+      "description": "A polite, spoken-style response script to read back to the customer"
+    }
+  },
+  "required": [
+    "complaint_description",
+    "sentiment",
+    "severity",
+    "priority",
+    "resolution_plan",
+    "customer_response"
+  ]
+}
